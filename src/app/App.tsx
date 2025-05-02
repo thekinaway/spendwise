@@ -1,11 +1,21 @@
-import './App.css'
+import { Header } from '../widgets/header/Header';
 
-function App() {
+import './styles/main.scss'
+import '../../node_modules/celestia-ui-kit-v2/dist/celestia-ui-kit-v2.css'
+import { Home } from '../pages/expenses/Home';
+import { Layout } from './providers/Layout';
 
+const App: React.FC = () => {
   return (
-    <div>
-      SpendWise
-    </div>
+    <>
+    <Header />
+    <Layout>
+      <div>
+      <Home />
+
+      </div>
+    </Layout>
+    </>
   )
 }
 
