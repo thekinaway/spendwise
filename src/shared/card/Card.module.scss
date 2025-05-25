@@ -1,0 +1,20 @@
+@use "@/app/styles/mixins" as *;
+@use "@/app/styles/variables" as *;
+
+.card {
+  @include display-flex(column, 20px, start, start);
+
+  background: $secondary;
+  padding: 20px 24px;
+  border-radius: 8px;
+  color: $white;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__content {
+    font-size: 3rem;
+  }
+}

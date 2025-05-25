@@ -1,0 +1,33 @@
+@use "../../app/styles/mixins" as *;
+@use "../../app/styles/variables" as *;
+
+.balance-widget {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "total total income"
+    "savings travel expense";
+  gap: 20px;
+
+  &--total {
+    grid-area: total;
+  }
+
+  &--income {
+    grid-area: income;
+    background-color: $primary;
+  }
+
+  &--expense {
+    grid-area: expense;
+  }
+
+  &--savings {
+    grid-area: savings;
+  }
+
+  &--travel {
+    grid-area: travel;
+  }
+}

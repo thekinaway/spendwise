@@ -1,0 +1,16 @@
+@use "../../../app/styles/variables" as *;
+
+.add-expense-widget {
+  background-color: $primary;
+  padding: 4rem 6rem;
+  border-radius: 64px 64px 0 0;
+
+  min-height: 100vh;
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+  }
+}

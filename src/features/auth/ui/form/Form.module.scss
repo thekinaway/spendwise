@@ -1,0 +1,22 @@
+@use "../../../../app/styles/mixins" as *;
+@use "../../../../app/styles/variables" as *;
+
+.signin-form {
+  @include display-flex(column, 20px, center);
+
+  margin: 0 auto;
+  min-height: calc(100vh - 400px);
+  padding: 6rem 14rem;
+  background: rgb(245 245 245 / 50%);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $primary;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}

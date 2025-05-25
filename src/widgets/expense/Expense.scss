@@ -1,42 +1,49 @@
-@use '../../app/styles/mixins' as *;
+@use "../../app/styles/mixins" as *;
+@use "../../../src/app/styles/variables" as *;
 
 .card {
-    @include display-flex(row, 20px, space-between, center);
-    padding: 20px;
-    border-radius: 12px;
-    background: #fff;
+  @include display-flex(row, 20px, space-between, center);
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
 
-    .card--left {
-        @include display-flex(column, 8px);
+  .card--left {
+    @include display-flex(column, 8px);
 
-        .card-title {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .card-category {
-            font-size: 14px;
-            font-weight: 400;
-            color: #9b9b9b;
-        }
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
     }
 
-    .card--right {
-        @include display-flex(column, 8px)
+    .card-category {
+      font-size: 14px;
+      font-weight: 400;
+      color: #9b9b9b;
     }
+  }
 
+  .card--right {
+    @include display-flex(column, 8px);
+  }
 }
 
 .expenses-list {
-    @include display-flex(column, 20px);
+  @include display-flex(column, 20px);
 
-    padding: 20px 34px;
-    border-radius: 12px;
-    box-shadow: 0 10px 28px 0 hsla(210, 8%, 54%, .2);
+  padding: 20px 34px;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px 0 hsla(210, 8%, 54%, 0.2);
 }
 
 .expense-add-block {
-    @include display-flex(row, 20px, space-between, center);
+  @include display-flex(row, 20px, space-between, center);
 
-    height: fit-content;
+  height: fit-content;
+}
+
+.add-expense-widget {
+  background-color: $primary;
+  padding: 2rem;
+  border-radius: 64px 64px 0 0;
+  min-height: 100vh;
 }

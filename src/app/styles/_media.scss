@@ -1,0 +1,16 @@
+$tablet-min: 768px;
+
+@mixin tablet {
+  @media (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+// usage:
+// .header {
+//     color: red;
+
+//     @include tablet {
+//       color: white;
+//     }
+//   }
