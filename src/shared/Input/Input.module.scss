@@ -1,5 +1,27 @@
+@use "@/app/styles/_variables.scss" as *;
+@use "@/app/styles/_mixins.scss" as *;
+
 .input {
-  border-radius: 6px;
-  border: 1px solid rgb(217, 217, 217);
-  padding: 8px 16px;
+  &__container {
+    @include display-flex(column, 8px);
+  }
+
+  &__control {
+    border-radius: 12px;
+    margin-top: 16px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0.75rem;
+  }
+
+  &__label {
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &--error {
+    .input__control {
+      border: 1px solid $error;
+    }
+  }
 }

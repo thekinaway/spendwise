@@ -4,14 +4,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 .layout {
   @include display-flex(column, 20px);
 
-  padding: 2rem 6rem;
-  // background: #F6F7F9;
+  padding: 2rem 6rem 4rem 6rem;
+  background-color: $dark-grey;
 }
 
 .main {

@@ -11,10 +11,15 @@
     "bink": "npm unlink celestia-ui-kit-v2 && npm link celestia-ui-kit-v2 && npm run dev"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.80.7",
     "clsx": "^2.1.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "install": "^0.13.0",
     "modern-normalize": "^3.0.1",
+    "npm": "^11.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.57.0",
     "react-router-dom": "^7.6.0",
     "sass": "^1.87.0"
   },

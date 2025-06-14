@@ -1,24 +1,35 @@
 @use "../../app/styles/mixins" as *;
+@use "../../app/styles/variables" as *;
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 6rem;
 
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   &__logo {
     max-width: 80px;
   }
-  .nav {
+
+  &-nav ul {
     display: flex;
     gap: 20px;
-    .nav-link {
+    list-style: none;
+
+    li {
+      padding: 20px;
+      margin: 0 4px;
+    }
+
+    a {
       font-size: 16px;
-      color: #343a40;
+      color: $content;
       text-decoration: none;
       &:hover {
-        color: #495057;
+        color: $black;
       }
     }
   }

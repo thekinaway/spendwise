@@ -1,5 +1,5 @@
-import { AddExpenseForm } from "./AddExpenseForm";
 import styles from "./AddExpense.module.scss";
+import { AddExpenseForm } from "./AddExpenseForm";
 
 export const AddExpenseWidget = () => {
   return (

@@ -2,19 +2,39 @@
 @use "@/app/styles/variables" as *;
 
 .card {
-  @include display-flex(column, 20px, start, start);
+  @include display-flex(column, 20px, center, center);
 
-  background: $secondary;
-  padding: 20px 24px;
-  border-radius: 8px;
-  color: $white;
+  background: $white;
+  padding: 40px 56px;
+  border-radius: 28px;
+  color: $black;
+  box-shadow: inset 0 0 0 1px $dark-grey;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1);
+
+  &:hover {
+    transform: scale(1.0096774194);
+  }
+  &--row {
+    flex-direction: row;
+  }
+
+  &__icon {
+    width: 64px;
+  }
 
   &__title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
+    color: $content;
+  }
+
+  &__content-wrapper {
+    @include display-flex(column, 8px);
   }
 
   &__content {
-    font-size: 3rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: $content;
   }
 }

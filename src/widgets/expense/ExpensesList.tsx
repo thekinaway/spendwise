@@ -1,17 +1,16 @@
-import { IExpense } from "../../app/types/types"
-import { ExpenseCard } from "./ExpenseCard"
+import { IExpense } from "../../app/types/types";
+import { ExpenseCard } from "./ExpenseCard";
 
 interface IExpenseListProps {
-    expenses: IExpense[];
+  expenses: IExpense[];
 }
 
 export const ExpenseList = ({ expenses }: IExpenseListProps) => {
-    return (
-        <div className="expenses-list">
-            {expenses?.map((expense: IExpense) => (
-                <ExpenseCard key={expense.id} expense={expense} />
-            ))}
-        </div>
-
-    )
-}
+  return (
+    <div className="expenses-list">
+      {expenses?.map((expense: IExpense) => (
+        <ExpenseCard key={expense.id} expense={expense} />
+      ))}
+    </div>
+  );
+};
